@@ -309,3 +309,16 @@ footer {
     border: none;
     box-shadow: var(--shadow-high);
 }
+
+.data-card {
+    border: none;
+    box-shadow: var(--shadow-low);
+}
+
+.input-group-text {
+    background-color: white;
+}
+
+input[type="number"]{
+    border-right: none;
+}

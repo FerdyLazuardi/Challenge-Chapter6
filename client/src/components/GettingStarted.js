@@ -1,4 +1,5 @@
 import "./Global.css";
+import { Link } from 'react-router-dom';
 
 function GettingStarted() {
   return (
@@ -10,9 +11,11 @@ function GettingStarted() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
+          <Link to="/sewa">
           <button className="btn btn-primary text-center" type="button">
             Mulai Sewa Mobil
           </button>
+          </Link>
         </div>
       </div>
     </section>

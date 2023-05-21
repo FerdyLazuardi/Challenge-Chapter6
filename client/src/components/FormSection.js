@@ -1,4 +1,6 @@
 import "./Global.css";
+import { useState } from 'react';
+
 
 const styles =`
   .form-input {
@@ -67,7 +69,20 @@ const styles =`
   }
 `;
 
-function FormSection() {
+function FormSection({handleSearch, onSearchClick }) {
+
+  const [typeDriver, setTypeDriver] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [passenger, setPassenger] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Panggil handleSearch dengan nilai input
+    handleSearch(typeDriver, date, time, passenger);
+    onSearchClick()
+  };
+
   return (
     <>
     <style>{styles}</style>
@@ -78,7 +93,7 @@ function FormSection() {
             action="#"
             className="d-grid form"
             method="get"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <div className="row gx-0">
               <div className="col-lg-3">
@@ -90,6 +105,7 @@ function FormSection() {
                     className="form-select"
                     aria-label="Default select example"
                     id="type-driver"
+                    onChange={(e) => setTypeDriver(e.target.value === 'sopir')}
                     required
                   >
                     <option value="" disabled selected hidden>
@@ -113,6 +129,7 @@ function FormSection() {
                     type="date"
                     className="form-control"
                     id="date"
+                    onChange={(e) => setDate(e.target.value)}
                     required
                   />
                 </div>
@@ -130,6 +147,7 @@ function FormSection() {
                     type="time"
                     className="form-control"
                     id="time"
+                    onChange={(e) => setTime(e.target.value)}
                     required
                   />
                 </div>
@@ -145,6 +163,7 @@ function FormSection() {
                       type="number"
                       className="form-control"
                       id="passenger"
+                      onChange={(e) => setPassenger(e.target.value)}
                     />
                     <span className="input-group-text">
                       <img

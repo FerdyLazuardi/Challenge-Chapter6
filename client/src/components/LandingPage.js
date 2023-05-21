@@ -1,4 +1,5 @@
 import "./Global.css";
+import { Link } from "react-router-dom";
 
 function LandingPage({ showButton }) {
   return (
@@ -18,9 +19,11 @@ function LandingPage({ showButton }) {
               kebutuhanmu untuk sewa mobil selama 24 jam.
             </p>
             {showButton && (
-              <button className="btn btn-primary mb-4" type="button">
-                Mulai Sewa Mobil
-              </button>
+              <Link to="/sewa">
+                <button className="btn btn-primary mb-4" type="button">
+                  Mulai Sewa Mobil
+                </button>
+              </Link>
             )}
           </div>
           <div className="col-md-6 d-flex justify-content-end">

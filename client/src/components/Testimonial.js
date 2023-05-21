@@ -23,7 +23,7 @@ const Testimonial = () => {
   return (
     <>
     <style>{styles}</style>
-      <h2 className="text-center fw-bold pt-5 mb-3">Testimonial</h2>
+      <h2 id="testimonial" className="text-center fw-bold pt-5 mb-3">Testimonial</h2>
       <p className="text-center desc mb-5">
         Berbagai review positif dari para pelanggan kami
       </p>
