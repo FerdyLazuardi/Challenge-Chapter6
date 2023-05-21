@@ -81,22 +81,22 @@ function Navbar() {
             <div className="offcanvas-body">
               <ul className="navbar-nav ms-auto mb-lg-0">
                 <li className="nav-item me-4">
-                  <a className="nav-link" href="#our-service">
+                  <a className="nav-link" href="/#our-service">
                     Our Service
                   </a>
                 </li>
                 <li className="nav-item me-4">
-                  <a className="nav-link" href="#why-us">
+                  <a className="nav-link" href="/#why-us">
                     Why Us
                   </a>
                 </li>
                 <li className="nav-item me-4">
-                  <a className="nav-link" href="#testimonial">
+                  <a className="nav-link" href="/#testimonial">
                     Testimonial
                   </a>
                 </li>
                 <li className="nav-item me-4 mb-1 mb-lg-0">
-                  <a className="nav-link" href="#faq">
+                  <a className="nav-link" href="/#faq">
                     FAQ
                   </a>
                 </li>
