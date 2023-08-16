@@ -1,7 +1,7 @@
 # Challenge 6 (Built a Website hat can fetch data based on user-input data)
 
-## Front End using React.js
-## Back-End using Express.js
+ Front End using React.js
+ Back-End using Express.js
 
 ## Getting Started
 
