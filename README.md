@@ -1,4 +1,5 @@
-# Challenge 6 (Built a Website hat can fetch data based on user-input data)
+# Challenge 6 
+## Built a Website hat can fetch data based on user-input data
 
  Front End using React.js
  
